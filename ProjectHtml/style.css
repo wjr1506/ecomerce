@@ -1,7 +1,7 @@
 * {
 	margin: 0 auto;
 	padding: 0;
-	box-sizing: border-box;
+	/* box-sizing: border-box; */
 	font-family: sans-serif;
 }
 
@@ -16,12 +16,17 @@ body{
 .menu_princ_hor ul{
 	max-width: 800px;
 	list-style: none;
-	padding: 0;
+	padding: 5px 0px;
 	background-color: rgb(37, 37, 39);
+	
 }
 .menu_princ_hor ul li{
 	display: inline;
+	
+	
 }
+
+
 .menu_princ_hor ul li a{
     color: #FFF;
     padding: 20px;
@@ -29,15 +34,61 @@ body{
     text-decoration: none;
     transition: background .4s;
 }
-.menu_princ_hor ul li a:hover {
+
+
+ .menu_princ_hor ul li a:hover {
 	color: rgb(8, 166, 77);
 	background-color: rgb(9, 25, 171);
 }
 .menu_princ_hor ul li:last-child a{
 	float: right;
-}
+} 
 
 /*fim nav*/
+
+/* carroussel */
+
+.main-product-image{
+	width: 500px;
+
+}
+
+.main-product-img-slide{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	border: 2px solid orange;
+}
+
+.thumb-slide{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	
+}
+
+.thumb-slide li{
+	float: left;
+	width: 100%;
+	margin-top: 1px;
+	border: 2px solid #ccc;
+	width: calc((100% - 10%)/6);
+	cursor: pointer;
+}
+
+.thumb-slide li:not(:last-child){
+	margin-right: 2%;
+}
+.thumb-slide li:hover{
+	border:2px solid #999;
+}
+.thumb-slide li.active{
+	border:2px solid orange;
+}
+
+
+
+
 
 /* inicio Css footer */
 .conteiner-fluid{
